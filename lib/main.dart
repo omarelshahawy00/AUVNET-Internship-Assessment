@@ -5,28 +5,17 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:nawel/core/di/di.dart';
 import 'package:nawel/core/helpers/custom_bloc_observer.dart';
-import 'package:nawel/features/home/data/models/user_model.dart';
 import 'package:nawel/core/network/services/prefs.dart';
 import 'package:nawel/core/routes/routes.dart';
+import 'package:nawel/features/home/data/models/user_model.dart';
 import 'package:nawel/firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  
   // Initialize Hive
   await Hive.initFlutter();
-
-  // Register adapters
-  if (!Hive.isAdapterRegistered(0)) {
-    Hive.registerAdapter(UserModelAdapter());
-  }
-
-  // Clear any existing cache to avoid typeId conflicts
-  try {
-    await Hive.deleteBoxFromDisk('user_box');
-  } catch (e) {
-    // Box might not exist, which is fine
-  }
+  Hive.registerAdapter(UserModelAdapter());
 
   await SharedPrefsService.init();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
