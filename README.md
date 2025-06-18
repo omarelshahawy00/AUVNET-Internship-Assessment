@@ -2,6 +2,10 @@
 
 This repository contains the complete Flutter application built as part of the AUVNET Internship Assessment. The project showcases clean architecture, Firebase integration, Bloc state management, and modular, scalable development patterns.
 
+
+https://github.com/user-attachments/assets/b80e58c4-cb1b-488a-9326-9484acca7fd5
+
+
 ---
 ### 📝 Deliverables Summary
 ### ✅ Complete source code uploaded to this GitHub repository.
