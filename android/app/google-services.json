@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208738463007",
+    "project_id": "nawel-6e6ce",
+    "storage_bucket": "nawel-6e6ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208738463007:android:a9993777190cbd84d3542a",
+        "android_client_info": {
+          "package_name": "com.example.nawel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuPUliTqMYpogpHASV0EMcIl9xapKqQWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
